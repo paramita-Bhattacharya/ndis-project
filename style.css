@@ -1,0 +1,66 @@
+.logo{
+    width:100%;
+    height: 250px;
+}
+.card{
+    border: 0ch;
+    
+}
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+.about {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: tomato;
+    padding: 20px;
+    
+}
+
+.textbar{
+    padding:20px;
+}
+
+.teamheader{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(22, 62, 65);
+    color: tomato;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+.services{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    background-color: rgb(22, 62, 65);
+    padding: 20px;
+    
+}
+
+
+.midheader{
+    width: 100%;
+    display:flex;
+    justify-content: space-around; 
+    color: tomato;
+    font-size: x-large;
+    font-weight: bold;
+}
+.text {
+    width: 100%;
+    display:flex;
+    justify-content: space-around; 
+}
+.contact{
+    background-color: tomato;
+    padding:10%;
+    color:rgb(22, 62, 65);;
+    font-size:medium;
+    font-weight:600;
+}
