@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
@@ -139,30 +141,50 @@
 
         </div>
         <!-- services ends  -->
-        <!-- contact starts here -->
-        <div class="contact">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
-                </div>
 
+        <!-- contact -->
+        <div class="contact" id="contactArea">
+            <form id="myform">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Contact Number</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Your contact number">
-                    <small id="emailHelp" class="form-text text-muted"></small>
-                </div>
 
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Your enquiry message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="name">
+                        <span>Your Name:</span>
+                        <input type="text" class="form-control" id="name" name="name" required minlength="5">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+
                 </div>
 
 
+                <div class="form-group">
+                    <label for="mail">
+                        <span>Your Email:</span>
+                        <input type="email" class="form-control" id="mail" name="mail" required minlength="8">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">
+                        <span>Mobile No:</span>
+                        <input type="number" class="form-control" id="mobile" name="mobile" required minlength="10"
+                            maxlength="10">
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry">
+                        <span>Enquiry:</span>
+                        </br>
+                        <textarea class="form-control" id="subject" name="text" placeholder="Write something.."
+                            style="height:200px" required minlength="5" cols="35"></textarea>
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                </div>
+
+
+                <button type="button" class="btn btn-secondary">Submit</button>
             </form>
         </div>
 

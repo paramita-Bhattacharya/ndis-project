@@ -59,8 +59,53 @@
 }
 .contact{
     background-color: tomato;
-    padding:10%;
+    padding: 10%;
     color:rgb(22, 62, 65);;
     font-size:medium;
     font-weight:600;
+    width:100%;
 }
+input[type=text], input[type=email], input[type=number], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+/* This is our style for the invalid fields */
+input:invalid{
+    border-color: rgb(22, 62, 65);
+    background-color: rgb(244, 242, 235);
+    
+  }
+  
+  input:focus:invalid {
+    outline: none;
+    
+  }
+  
+  /* This is the style of our error messages */
+  .error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color:rgb(22, 62, 65);;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
+
+  .form-control{
+    width: 100%;
+  }
+  
